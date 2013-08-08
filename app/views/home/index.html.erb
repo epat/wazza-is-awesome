@@ -8,7 +8,7 @@
   <li><a href="/jobs">Test Background Jobs (redis) using Posts</a></li>
 </ul>
 
-<a name="rails_config"><h2>App RAILS config</h2></a>
+<a name="rails_config"><h2>App RAILS config- new branch</h2></a>
 <table border="1">
   <th>Variable</th><th>Type</th><th>Value</th>
   <% rac = Rails.application.config -%>
@@ -28,14 +28,14 @@
   <% end -%>
 </table>
 
-<a name="db_config"><h2>App DATABASE config</h2></a>
+<a name="db_config"><h2>App DATABASE config- new branch</h2></a>
 <table border="1">
   <% Rails.application.config.database_configuration[ENV['RAILS_ENV']].each do |key,value| %>
     <tr><td> <b><%= key %>:</b></td><td> <%= value %></td></tr>
   <% end -%>
 </table>
 
-<a name="env_config"><h2>App ENV parameters</h2></a>
+<a name="env_config"><h2>App ENV parameters- new branch</h2></a>
 <table border="1">
   <% ENV.keys.sort {|x,y| x.upcase <=> y.upcase}.each do |key| -%>
     <tr><td> <b><%= key %>:</b></td><td> <%= ENV[key] %></td></tr>
